@@ -1,0 +1,3 @@
+[submodule "themes/erdanielsdotcom"]
+	path = themes/erdanielsdotcom
+	url = git@github.com:edaniels/erdanielsdotcom-theme.git
