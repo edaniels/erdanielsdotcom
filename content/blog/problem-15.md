@@ -27,9 +27,9 @@ BigInt P15 (int target)
 
 	return two.sumDigits();
 }
-[/cpp]
+```
 
-[cpp]
+```cpp
 BigInt BigInt::sumDigits()
 {
 	BigInt sum = 0;
