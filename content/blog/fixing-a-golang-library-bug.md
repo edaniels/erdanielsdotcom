@@ -1,6 +1,5 @@
 +++
 date = "2015-05-31T15:53:52-04:00"
-draft = true
 title = "Debugging/Fixing a Third-Party Go Package Bug"
 type = "post"
 
