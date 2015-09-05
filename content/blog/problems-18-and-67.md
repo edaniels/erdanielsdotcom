@@ -4,19 +4,21 @@ title = "Problems 18 and 67"
 type = "post"
 +++
 
-Problems 18/67
+Problems 18 & 67
 
 
 
 <blockquote>
 By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
+</blockquote>
 
-3
-7 4
-2 4 6
-8 5 9 3
+	3 
+	7 4
+	2 4 6
+	8 5 9 3
 
-That is, 3 + 7 + 4 + 9 = 23.
+<blockquote>
+That is, $3 + 7 + 4 + 9 = 23$.
 
 Find the maximum total from top to bottom of the triangle below:
 </blockquote>
@@ -29,7 +31,7 @@ The way my algorithm and a lot of other people's algorithms for this problem wor
 
 At first I didn't understand the problem and I thought it was just asking what is the sum of the path of the highest adjacent numbers. Obviously that was wrong but it created an interesting point. It is best to start at the bottom because you do not know how numbers below the current row you are on will affect the sum. But if you start from the bottom you already know what the max values for that path can be. Also, if you were to start from the top with the same algorithm, you would have to search for the maximum value in the last row to get your answer as opposed to having the top contain one element.
 
-Some memory is wasted in my array declaration since it is not truly [15][15] but C++ is needy like that and doesn't support jagged arrays as far as I know.
+Some memory is wasted in my array declaration since it is not truly `[15][15]` but C++ is needy like that and doesn't support jagged arrays as far as I know.
 
 ```cpp
 void calcMaxTriangleRow (BigInt top[], BigInt bottom[], int bottomSize)

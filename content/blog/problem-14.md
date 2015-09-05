@@ -6,10 +6,21 @@ type = "post"
 
 <blockquote>
 The following iterative sequence is defined for the set of positive integers:
+</blockquote>
 
-n  n/2 (n is even)
-n  3n + 1 (n is odd)
+<blockquote>
+$
+n =
+\left\{
+	\begin{array}{ll}
+		\frac{n}{2}  & \mbox{if n is even} \\
+		3*n + 1 & \mbox{if n is odd}
+	\end{array}
+\right.
+$
+</blockquote>
 
+<blockquote>
 Using the rule above and starting with 13, we generate the following sequence:
 
 13  40  20  10  5  16  8  4  2  1

@@ -4,15 +4,14 @@ title = "Problem 13"
 type = "post"
 +++
 
-<blockquote>Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+<blockquote>Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.</blockquote>
 
-> 
-> 37107287533902102798797998220837590246510135740250
+<blockquote>
+37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
 74324986199524741059474233309513058123726617309629
 919422133...
-> 
-> </blockquote>
+</blockquote>
 
 <!--more-->
 This problem is very simple once you have the ability to use a BigInt class. I later found out that there could be 11 digits max by adding 50 digit numbers again and again but I figured it would be a more useful exercise if I finally created a BigInt class. Once I thought I had BigInt working I kept getting the answer wrong which made me realize that my carry over addition was completely wrong when the carry got too high. After fixing that it worked perfectly!
