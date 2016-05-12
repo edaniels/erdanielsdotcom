@@ -5,7 +5,7 @@ type = "post"
 
 +++
 
-MongoDB's product, MMS, uses Go for all of the agents that run on MMS (Monitoring, Backup, Automation) as well as for some small utilities. All of these binaries use the [gowin32](https://github.com/winlabs/gowin32) package in some form or another. I have recently begun working on a feature in the Automation agent that requires gowin32 and I noticed when writing code like the following that my binary would crash:
+Text Yo Hey MongoDB's product, MMS, uses Go for all of the agents that run on MMS (Monitoring, Backup, Automation) as well as for some small utilities. All of these binaries use the [gowin32](https://github.com/winlabs/gowin32) package in some form or another. I have recently begun working on a feature in the Automation agent that requires gowin32 and I noticed when writing code like the following that my binary would crash:
 
 <!--more-->
 
