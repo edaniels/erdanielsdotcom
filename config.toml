@@ -1,4 +1,4 @@
-baseurl = "https://erdaniels.com"
+baseurl = "http://erdaniels.com"
 languageCode = "en-us"
 title = "Eric Daniels - Software Engineer"
 theme = "erdanielsdotcom"
