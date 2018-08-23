@@ -1,0 +1,18 @@
+name = "erdanielsdotcom"
+license = "MIT"
+licenselink = "https://github.com/edaniels/erdanielsdotcom-theme/LICENSE"
+description = "A hacked theme based on npf.io which is based on hyde"
+homepage = "https://github.com/edaniels/erdanielsdotcom"
+tags = ["blog", "technical", "personal"]
+features = ["blog", "technical", "personal"]
+min_version=0.13
+
+[author]
+    name = "Eric Daniels"
+    homepage = "https://erdaniels.com"
+
+# If Porting existing theme
+[original]
+    author =  "Nate Finch"
+    homepage = "http://npf.io"
+    repo = "https://github.com/natefinch/npf"

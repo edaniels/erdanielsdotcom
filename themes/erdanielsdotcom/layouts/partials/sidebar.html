@@ -1,0 +1,33 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+
+    <div class="sidebar-about">
+      <h1 class="brand"><a href="{{.Site.BaseURL}}">{{ .Site.Author.name }}</a></h1>
+      <p class="lead">
+        {{ with .Site.Params.description }} {{.}} {{end}}
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="{{.Site.BaseURL}}/blog/">Blog Posts</a></li>
+      {{ range .Site.Menus.main }}
+        <li><a href="{{.Url}}">{{ .Name }} </a></li>
+      {{end}}
+    </ul>
+
+    {{ with .Site.Params.facebook }}<a href="{{.}}"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp;{{end}}
+    {{ with .Site.Params.github }}<a href="{{.}}"><i class="fa fa-github-square"></i></a>&nbsp;&nbsp;{{end}}
+    {{ with .Site.Params.linkedin }}<a href="{{.}}"><i class="fa fa-linkedin-square"></i></a>&nbsp;&nbsp;{{end}}
+    {{ with .Site.Params.gplus }}<a href="{{.}}"><i class="fa fa-google-plus"></i></a>{{end}}
+    {{ with .Site.Params.twitter }}<a href="{{.}}"><i class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;{{end}}
+
+    <p class="footnote">
+      Created with <a href="//gohugo.io">Hugo</a>
+      <br/>
+      <a href="//github.com/edaniels/erdanielsdotcom-theme">Theme</a> based off of <a href="//github.com/natefinch/npf">npf.io</a>
+      <br/>
+      &copy; {{.Now.Format "2006"}} {{ .Site.Author.name }}. All rights reserved.
+    </p>
+    
+  </div>
+</div>
