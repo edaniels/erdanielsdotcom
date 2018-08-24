@@ -1,0 +1,14 @@
+<header class="container">
+Eric Daniels -
+<a href="/">Home</a>&nbsp;
+<a href="/blog">Blog</a>&nbsp;
+<a href="/about" compile-ref="about/about.md">About</a>
+<script type="text/javascript" compile>
+	const lastComp = path.lastIndexOf("/");
+	const check = lastComp == 0 ? '/' : path.substr(0, lastComp);
+	const curr = $(`a[href='${check}']`);
+	curr.text(`[${curr.text()}]`);
+	undefined;
+</script>
+<hr />
+</header>

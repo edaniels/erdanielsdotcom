@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Eric Daniels - Blog Archive</title>
+    <script type="text/javascript" compile=>
+      compile('styles.html');
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript" compile>
+      compileDyn('header.html');
+    </script>
+    <div class="content container">
+      <div id="blog">
+          <h1>All Blog Posts</h1>
+          <ul id="all_posts">
+            <script type="text/javascript" compile=>
+              content('blog/posts')
+                .mostRecent()
+                .map(post =>
+                  $(`<li><a href="posts/${post.fileName}.html" compile-ref="${post.relPath}">${post.title}</a> (${new Date(post.date).toDateString()})</li>`)
+                );
+            </script>
+          </ul>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" compile=>
+    compile('footer.html');
+  </script>
+</html>

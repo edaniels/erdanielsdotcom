@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Eric Daniels - <script compile>content.title</script></title>
+    <script type="text/javascript" compile=>
+      compile('styles.html');
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript" compile>
+      compileDyn('header.html');
+    </script>
+    <div class="content container">
+      <div class="post">
+        <h1 class="post-title"><script compile>content.title</script></h1>
+        <script type="text/javascript" compile>
+          $(content.content);
+        </script>  
+      </div>
+    </div>
+    <script type="text/javascript" compile>
+      compile('footer.html');
+    </script>
+  </body>
+</html>

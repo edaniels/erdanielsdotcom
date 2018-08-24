@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Eric Daniels - About</title>
+    <script type="text/javascript" compile=>
+      compile('styles.html');
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript" compile>
+      compileDyn('header.html');
+    </script>
+    <div class="content container">
+      <script type="text/javascript" compile=>
+        content.content
+      </script>
+    </div>
+    <script type="text/javascript" compile=>
+      compile('footer.html');
+    </script>
+  </body>
+</html>
